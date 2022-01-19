@@ -8,6 +8,5 @@ jinja2==2.11.1
 keras==2.3.1
 numpy==1.18.1
 pillow==7.0.0
-python==3.6.10
 tensorflow==2.0.0
 werkzeug==1.0.1
