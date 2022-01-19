@@ -2,11 +2,43 @@
 {% block content %}
 <div class="container">
   <div class="col content">
-    <h1>画像分類</h1>
+    <h1>食べ物の健康度チェック</h1>
+    <hr>
+    <p>あなたが食事した食べ物を写真にとってアップロードしてみましょう！</p>
+    <p>AIが画像を読み込み、どれだけ健康的な食事をしているのかを判定します。</p>
     <form method="post", enctype="multipart/form-data", action="/result">
-      <input name="file" type="file">
-      <input type="submit", value="判定">
+      <input name="file" type="file" id="elmFile" onchange="selectFile()">
+      <input type="submit" id="judge" value="判定" class="btn btn-primary btn-lg ml-3 px-4">
     </form>
+
+    <!-- 許可されていないファイルがアップロードされたときのflash処理 -->
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class=flashes>
+          {% for message in messages %}
+            <li class="not_allowed_file">{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+    <p><small>※ 画像認識の精度は100%ではないため、間違った判定をすることもございます。</small></p>
   </div>
 </div>
+<script>
+  $judge = document.getElementById("judge")
+
+  // ページが読み込まれたときの処理
+  window.onload = function() {
+    $judge.disabled = true;
+  }
+
+  // ファイルが選択されたら判定ボタンを押せるようにする
+  function selectFile() {
+    if (document.getElementById("elmFile").value === "") {
+      $judge.disabled = true;
+    } else {
+      $judge.disabled = false;
+    }
+  }
+</script>
 {% endblock %}

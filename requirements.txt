@@ -1,9 +1,13 @@
-Flask==1.1.2
-gunicorn==20.0.4
-h5py==2.10.0
-Jinja2==2.11.1
-Keras==2.3.1
-numpy==1.18.1
-Pillow==7.0.0
-tensorflow==1.15.3
-Werkzeug==1.0.1
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: osx-64
+flask=1.1.2=pyhd3eb1b0_0
+gunicorn=20.0.4=py36hecd8cb5_0
+h5py=2.10.0=py36h0601b69_1
+jinja2=2.11.1=py_0
+keras=2.3.1=0
+numpy=1.18.1=py36h7241aed_0
+pillow=7.0.0=py36h4655f20_0
+python=3.6.10=hf48f09d_2
+tensorflow=2.0.0=mkl_py36ha38f243_0
+werkzeug=1.0.1=pyhd3eb1b0_0

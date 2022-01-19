@@ -3,10 +3,12 @@
 <div class="container">
   <div class="col content">
     <h1>判定結果</h1>
+    <hr>
     {{result}}
-    <p><img src="{{filepath}}"></p>
+    {{result_ratio}}
+    <p><img src="{{filepath}}" width="30%" height="30%"></p>
     <form method="get" action="/">
-      <button class="submit">戻る</button>
+      <button class="submit btn btn-secondary btn-lg px-5">戻る</button>
     </form>
   </div>
 </div>
