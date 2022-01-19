@@ -1,62 +1,14 @@
-
 <!doctype html>
 <html>
   <head>
     <meta charset="UTF=8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
     <title>食べ物の健康度チェックをするアプリケーション</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
-
-    <style media="screen">
-      body {
-        background: url('../static/images/background_image.jpg') no-repeat center center;
-        background-size: cover;
-        background-attachment: fixed;
-        height: 100%;
-      }
-      .wf-notosansjapanese { font-family: "Noto Sans JP"; }
-      .content {
-        width: 100%;
-        text-align: center;
-        background-color: #EEFFFF	;
-        margin-top: 30px;
-        padding-bottom: 10px;
-        border-radius: 8px;
-        opacity: 0.95;
-      }
-      .content h1 {
-        width: 100%;
-        margin-top: 25px;
-        padding-top: 20px;
-      }
-      .content form {
-        margin-top: 70px;
-        margin-bottom: 20px;
-        width: 100%;
-      }
-      .content p {
-        font-size: 20px;
-      }
-      .not_allowed_file {
-        color: #EE0000;
-        background-color: rgb(255, 255, 203);
-        list-style: none;
-        padding: 3px 3px;
-        border-radius: 2px;
-      }
-      footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        background-color: #333333;
-        color: #EEEEEE;
-        text-align: center;
-        padding: 20px 0;
-      }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   </head>
   <body class="wf-notosansjapanese">
-
     {% block content %}
     {% endblock %}
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

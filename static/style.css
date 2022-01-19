@@ -1,0 +1,77 @@
+html {
+  background: url('/static/background_image.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  background-color: #333333;
+}
+body {
+  background: url('/static/background_image.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+}
+.wf-notosansjapanese { font-family: "Noto Sans JP"; }
+.content {
+  width: 100%;
+  text-align: center;
+  background-color: #EEFFFF	;
+  margin-top: 30px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+  opacity: 0.95;
+}
+.content h1 {
+  width: 100%;
+  margin-top: 25px;
+  padding-top: 20px;
+}
+.content form {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.content p {
+  font-size: 20px;
+}
+.not_allowed_file {
+  color: #EE0000;
+  background-color: rgb(255, 255, 203);
+  list-style: none;
+  padding: 3px 3px;
+  border-radius: 2px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #333333;
+  color: #EEEEEE;
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media screen and ( max-width:479px ) {
+  h1 {
+    font-size: 150%;
+    font-weight: bold;
+  }
+  input {
+    display: block;
+    margin: 0 auto;
+  }
+  input {
+    display: block;
+    margin: 0 auto;
+  }
+  .content form {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .select-file {
+    padding-bottom: 20px;
+  }
+  footer {
+    margin-top: 100px;
+  }
+}

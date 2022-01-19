@@ -7,8 +7,8 @@
     <p>あなたが食事した食べ物を写真にとってアップロードしてみましょう！</p>
     <p>AIが画像を読み込み、どれだけ健康的な食事をしているのかを判定します。</p>
     <form method="post", enctype="multipart/form-data", action="/result">
-      <input name="file" type="file" id="elmFile" onchange="selectFile()">
-      <input type="submit" id="judge" value="判定" class="btn btn-primary btn-lg ml-3 px-4">
+      <input class="select-file" name="file" type="file" id="elmFile" onchange="selectFile()">
+      <input type="submit" id="judge" value="判定" class="judge btn btn-primary btn-lg ml-3 px-4">
     </form>
 
     <!-- 許可されていないファイルがアップロードされたときのflash処理 -->
