@@ -123,9 +123,13 @@ generator = ImageDataGenerator(
 学習済みのモデルは`food_classify_model.h5`としてローカルに保存しました。
 
 ## 学習の推移を表示
-損失関数のグラフ&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;精度のグラフ  
-![スクリーンショット 2022-01-21 0 28 34](https://user-images.githubusercontent.com/56781357/150369209-611b3402-459b-4de7-aa99-d19c655817b6.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+損失関数のグラフ    
+![スクリーンショット 2022-01-21 0 28 34](https://user-images.githubusercontent.com/56781357/150369209-611b3402-459b-4de7-aa99-d19c655817b6.png)  
+<br>
+<br>
+精度のグラフ  
 ![スクリーンショット 2022-01-21 0 30 21](https://user-images.githubusercontent.com/56781357/150369540-2eb0f07d-1b0b-4515-b037-555f9173e0e5.png)
+<br>
 <br>
 上記のグラフよりエポック数80では損失関数が収束しきれてないことが分かります。
 <br>
