@@ -34,12 +34,17 @@ body {
 .content p {
   font-size: 20px;
 }
-.not_allowed_file {
+.show-not-allowed ul {
+  padding-left: 0;
+}
+.show-not-allowed li {
+  width: 80%;
   color: #EE0000;
   background-color: rgb(255, 255, 203);
   list-style: none;
   padding: 3px 3px;
   border-radius: 2px;
+  display: inline-block;
 }
 footer {
   position: absolute;
@@ -63,6 +68,9 @@ footer {
   input {
     display: block;
     margin: 0 auto;
+  }
+  .content p {
+    font-size: 16px;
   }
   .content form {
     margin-top: 10px;
