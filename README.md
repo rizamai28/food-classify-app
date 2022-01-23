@@ -7,7 +7,8 @@
 あなたが撮った写真や画像をアップロードすることで、AIがどれだけ健康的な画像であるかを判定します。  
 レスポンシブに対応してるのでスマホからもご覧いただけます。 
 ### URL
-[food-classify-app.herokuapp.com/](https://food-classify-app.herokuapp.com/)
+[food-classify-app.herokuapp.com/](https://food-classify-app.herokuapp.com/)  
+※ 読み込みに時間がかかる場合があります。
 
 ### 利用方法
 1. 画像をアップロードして判定ボタンを押します。(jpg, png, gif形式のいずれか)
