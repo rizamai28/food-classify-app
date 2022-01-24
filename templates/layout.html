@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- twitter OGP -->
+    <meta name="twitter:card" content="summary">
+    <meta property="og:title" content="食べ物の健康度チェックをするアプリケーション" />
+    <meta property="og:description" content="食べ物の画像を認識して健康度を判定するアプリです。
+    あなたが撮った写真や画像をアップロードすることで、AIがどれだけ健康的な画像であるかを判定します。" />
+    <meta property="og:image" content="/static/background_image.jpg" />
   </head>
   <body class="wf-notosansjapanese">
     {% block content %}

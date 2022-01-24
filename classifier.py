@@ -70,9 +70,13 @@ def result():
         else:
             result += "<h3>★☆☆☆☆</h3>" + "<p>栄養が偏った食事です。<br>ファストフードやジャンクフードなどは控えて、<br>和定食などの健康的な食事をするようにしましょう。</p>"
 
+        # どれくらいの精度で判定したかのテキスト
         result_ratio = "<p><small>" + str(round(healthy_ratio*100, 1)) + "%で健康的な食事だと判定されました。</small></p>"
 
-        return render_template("result.html", result=Markup(result), result_ratio=Markup(result_ratio), filepath=filepath)
+        # ツイッターに表示させる用のテキスト
+        result_tweet_text = "判定結果\n" + result.replace("<h3>", "").replace("</h3>", "\n").replace("<p>", "").replace("<br>", "").replace("</p>", "\n") + str(round(healthy_ratio*100, 1)) + "%で健康的な食事だと判定されました。\n"
+
+        return render_template("result.html", result=Markup(result), result_ratio=Markup(result_ratio), result_tweet_text=result_tweet_text, filepath=filepath)
     else:
         return redirect(url_for("index"))
 
