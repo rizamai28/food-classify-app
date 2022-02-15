@@ -6,7 +6,9 @@
 食べ物の画像を認識して健康度を判定するアプリです。  
 あなたが撮った写真や画像をアップロードすることで、AIがどれだけ健康的な画像であるかを判定します。  
 レスポンシブに対応してるのでスマホからもご覧いただけます。   
-判定結果をぜひTwitterでツイートしてみましょう。
+判定結果をぜひTwitterでツイートしてみましょう。  
+
+※ iOS版SafariにてTwitterシェアボタンの動作が機能しない不具合があるため、なるべくChromeをお使いいただくようお願いいたします。
 
 ### URL
 [food-classify-app.herokuapp.com/](https://food-classify-app.herokuapp.com/)  
