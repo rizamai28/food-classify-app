@@ -61,11 +61,11 @@ def result():
         # 確率ごとの判定コメントをviewに表示させるためにresultに代入
         if healthy_ratio >= 0.8:
             result += "<h3>★★★★★</h3>" + "<p>とても理想的な食事です！<br>この調子で栄養バランスの取れた食事を心がけましょう。</p>"
-        elif healthy_ratio >= 0.7:
+        elif healthy_ratio >= 0.6:
             result += "<h3>★★★★☆</h3>" + "<p>健康的な食事です！<br>野菜や肉などのバランス良く組み合わせた和食を<br>食べるように意識すると良いでしょう。</p>"
-        elif healthy_ratio >= 0.5:
+        elif healthy_ratio >= 0.4:
             result += "<h3>★★★☆☆</h3>" + "<p>まあまあ健康的な食事です。<br>健康のためにも脂っこい食事は<br>なるべく控えるように心がけましょう。</p>"
-        elif healthy_ratio >= 0.3:
+        elif healthy_ratio >= 0.2:
             result += "<h3>★★☆☆☆</h3>" + "<p>少し栄養が偏った食事です。<br>必要以上のカロリー摂取は控えて<br>太らないように気をつけましょう。</p>"
         else:
             result += "<h3>★☆☆☆☆</h3>" + "<p>栄養が偏った食事です。<br>ファストフードやジャンクフードなどは控えて、<br>和定食などの健康的な食事をするようにしましょう。</p>"
@@ -82,4 +82,3 @@ def result():
 
 if __name__ == "__main__":
     app.run()
-    
